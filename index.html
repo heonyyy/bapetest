@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A BATHING APE</title>
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        window.onload = () => {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 3500,/* 2.5s */
+                    disableOnInteraction: false,
+                },
+            });
+
+            var swiper = new Swiper(".mySwiper-02", {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+            let btn = document.querySelector('.button-3');
+            let lang = document.querySelector('.depth-02');
+
+            let btn_1 = document.querySelector('.button-4');
+            let country = document.querySelector('.depth-03');
+
+            let btn_2 = document.querySelector('button-1');
+            let search = document.querySelector('search_sidebar');
+
+            let btn_3 = document.querySelector('.search');
+
+            let btn_4 = document.querySelector('.button-6');
+            let language = document.querySelector('.depth-04');
+
+            let btn_5 = document.querySelector('.button-7');
+            let ctry = document.querySelector('.depth-05');
+
+            btn.addEventListener('click', () => {
+                lang.classList.toggle('active')
+            });
+
+            btn_1.addEventListener('click', () => {
+                country.classList.toggle('active')
+            });
+
+            btn_2.addEventListener('click', () => {
+                search.classList.toggle('active')
+            });
+
+            btn_4.addEventListener('click', () => {
+                language.classList.toggle('active')
+            });
+
+            btn_5.addEventListener('click', () => {
+                ctry.classList.toggle('active')
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="img/BAPE_LOGO_5ab56a10-b38a-4a10-8268-0c70116700f6.jpg" alt="">
+            </a>
+        </div><!-- logo end -->
+        <nav class="nav">
+            <ul class="gnb">
+                <li>
+                    <a href="#">NEWARRIVALS <img src="icon/ic--baseline-keyboard-arrow-down.png" alt=""></a>
+                    <ul class="depth-01">
+                        <li><a href="#">남성 NEWARRIVALS</a></li>
+                        <li><a href="#">여성 NEWARRIVALS</a></li>
+                        <li><a href="#">아동 NEWARRIVALS</a></li>
+                    </ul><!-- depth-01 -->
+                </li>
+                <li>
+                    <a href="#">상표 <img src="icon/ic--baseline-keyboard-arrow-down.png" alt=""></a>
+                    <ul class="depth-01">
+                        <li><a href="#">A BATHING APE</a></li>
+                        <li><a href="#">BAPE BLACK</a></li>
+                        <li><a href="#">BABY MILO STORE</a></li>
+                        <li><a href="#">AAPE</a></li>
+                        <li><a href="#">BABY</a></li>
+                        <li><a href="#">APEE</a></li>
+                        <li><a href="#">MR.BATHING APE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">남자들 <img src="icon/ic--baseline-keyboard-arrow-down.png" alt=""></a>
+                    <ul class="depth-01">
+                        <li><a href="#">모두 쇼핑하기</a></li>
+                        <li><a href="#">의류</a></li>
+                        <li><a href="#">신발</a></li>
+                        <li><a href="#">가방</a></li>
+                        <li><a href="#">액세서리</a></li>
+                        <li><a href="#">상표</a></li>
+                    </ul><!-- depth-01 -->
+                </li>
+                <li>
+                    <a href="#">여성 <img src="icon/ic--baseline-keyboard-arrow-down.png" alt=""></a>
+                    <ul class="depth-01">
+                        <li><a href="#">모두 쇼핑하기</a></li>
+                        <li><a href="#">의류</a></li>
+                        <li><a href="#">신발</a></li>
+                        <li><a href="#">가방</a></li>
+                        <li><a href="#">액세서리</a></li>
+                        <li><a href="#">상표</a></li>
+                    </ul><!-- depth-01 -->
+                </li>
+                <li>
+                    <a href="#">어린이 <img src="icon/ic--baseline-keyboard-arrow-down.png" alt=""></a>
+                    <ul class="depth-01">
+                        <li><a href="#">모두 쇼핑하기</a></li>
+                        <li><a href="#">의류</a></li>
+                        <li><a href="#">신발</a></li>
+                        <li><a href="#">가방</a></li>
+                        <li><a href="#">액세서리</a></li>
+                    </ul><!-- depth-01 -->
+                </li>
+                <li>
+                    <a href="#">라이프스타일 <img src="icon/ic--baseline-keyboard-arrow-down.png" alt=""></a>
+                    <ul class="depth-01">
+                        <li><a href="#">모두</a></li>
+                        <li><a href="#">장난감 & 피규어</a></li>
+                        <li><a href="#">기술 액세서리</a></li>
+                        <li><a href="#">홈 장식</a></li>
+                        <li><a href="#">주방 & 식기류</a></li>
+                        <li><a href="#">문방구</a></li>
+                        <li><a href="#">반려동물 액세서리</a></li>
+                    </ul><!-- depth-01 -->
+                </li>
+                <li><a href="#">갤러리</a></li>
+                <li><a href="#">NEWS</a></li>
+
+            </ul>
+        </nav><!-- nav end -->
+        <ul class="util">
+            <li>
+                <button class="button-1">
+                    <a href="#"><img src="icon/circum--search.png" alt=""></a>
+                </button>
+
+            </li>
+            <li>
+                <button class="button-2">
+                    <a href="#"><img src="icon/iconoir--user.png" alt=""></a>
+                </button>
+            </li>
+            <li>
+                <button class="button-3">
+                    <a href="#">Ko</a>
+                </button>
+                <ul class="depth-02">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">한국어</a></li>
+                    <li><a href="#">繁體中文</a></li>
+                </ul>
+
+            </li>
+            <li>
+                <button class="button-4">
+                    <a href="#"><img src="icon/twemoji--flag-south-korea.png" alt="">KRW ₩
+                    </a>
+                </button>
+                <ul class="depth-03">
+                    <li><a href="#">남아프리카 (ZAR R)</a></li>
+                    <li><a href="#">노르웨이 (EUR €)</a></li>
+                    <li><a href="#">뉴질랜드 (NZD $)</a></li>
+                    <li><a href="#">대만 (TWD $)</a></li>
+                    <li><a href="#">대한민국 (KRW ₩)</a></li>
+                    <li><a href="#">덴마크 (EUR €)</a></li>
+                    <li><a href="#">라트비아 (EUR €)</a></li>
+                    <li><a href="#">루마니아 (EUR €)</a></li>
+                    <li><a href="#">리투아니아 (EUR €)</a></li>
+                    <li><a href="#">마카오(중국 특별행정구) (MOP P)</a></li>
+                    <li><a href="#">말레이시아 (MYR RM)</a></li>
+                    <li><a href="#">멕시코 (MXN $)</a></li>
+                    <li><a href="#">몰타 (EUR €)</a></li>
+                    <li><a href="#">바레인 (USD $)</a></li>
+                    <li><a href="#">베트남 (USD $)</a></li>
+                    <li><a href="#">불가리아 (EUR €)</a></li>
+                    <li><a href="#">브라질 (USD $)</a></li>
+                    <li><a href="#">사우디아라비아 (SAR ر.س)</a></li>
+                    <li><a href="#">스웨덴 (EUR €)</a></li>
+                    <li><a href="#">스위스 (EUR €)</a></li>
+                    <li><a href="#">슬로베니아 (EUR €)</a></li>
+                    <li><a href="#">싱가포르 (SGD $)</a></li>
+                    <li><a href="#">아랍에미리트 (AED د.إ)</a></li>
+                    <li><a href="#">아르헨티나 (USD $)</a></li>
+                    <li><a href="#">에스토니아 (EUR €)</a></li>
+                    <li><a href="#">오만 (USD $)</a></li>
+                    <li><a href="#">오스트레일리아 (AUD $)</a></li>
+                    <li><a href="#">인도 (USD $)</a></li>
+                    <li><a href="#">인도네시아 (IDR Rp)</a></li>
+                    <li><a href="#">칠레 (USD $)</a></li>
+                    <li><a href="#">카자흐스탄 (USD $)</a></li>
+                    <li><a href="#">카타르 (QAR ر.ق)</a></li>
+                    <li><a href="#">콜롬비아 (USD $)</a></li>
+                    <li><a href="#">쿠웨이트 (USD $)</a></li>
+                    <li><a href="#">키프로스 (EUR €)</a></li>
+                    <li><a href="#">태국 (USD $)</a></li>
+                    <li><a href="#">터키 (EUR €)</a></li>
+                    <li><a href="#">핀란드 (EUR €)</a></li>
+                    <li><a href="#">필리핀 (PHP ₱)</a></li>
+                    <li><a href="#">헝가리 (EUR €)</a></li>
+                    <li><a href="#">홍콩(중국 특별행정구) (HKD $)</a></li>
+                </ul>
+
+            </li>
+            <li>
+                <button class="button-5"><a href="#">카트 <img src="icon/bytesize--cart.png" alt=""> 0</a></button>
+            </li>
+
+        </ul><!-- util end -->
+        <!-- <div class="search_sidebar">
+            <div class="search_inner">
+                <div class="search_img">
+                    <button class="search">
+                        <a href="#">
+                        <img src="icon/material-symbols-light--close-rounded.png" alt=""></a>
+                    </button>
+                </div>
+
+                <div class="search_container">
+                    <p>찾다</p> -->
+        </div><!-- search_img -->
+        </div><!-- search_inner -->
+        </div><!-- search_sidebar -->
+    </header><!-- header end -->
+
+    <section class="visual">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/20241123_FW24_BAPE_SHARK_ATTACK_1st_n_2nd_2160x1080_4439df49-8810-4de0-928c-8785c526a63f.webp"
+                        alt="">
+                    <p>SHOP NOW</p>
+                </div><!-- swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/2502_NEON-CAMO_BANNER__2160x1080_541d8be4-bd79-48d6-8ccc-45d6402356b8.jpg" alt="">
+                    <p>SHOP NOW</p>
+                </div><!-- swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/Banner_Resize_M1_PC_-_02.jpg" alt="">
+                    <p>SHOP NOW</p>
+                </div><!-- swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/Bape_STA_Banner_0301_2160x1080_f96be776-9f77-4942-892a-6d7e5f62f94f.jpg" alt="">
+                    <p>SHOP NOW</p>
+                </div><!-- swiper-slide -->
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+
+    <section class="visual_02">
+        <div class="title">
+            <h2><a href="#">신상품</a></h2>
+            <div class="title-row">
+
+            </div>
+
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper-02">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/0ZXSHM191303OGRX-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>BAPE STA #1 M1</h3>
+                        <span>₩475,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/0ZXSHW291302OPKX-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>BAPE STA #1</h3>
+                        <span>₩475,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/0ZXSWM113317OBKX-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>Multi Logo Relaxed Fit Pullover</h3>
+                        <span>₩451,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/0ZXTEW007092OBLX-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>Gradation Big College Oversized Tee</h3>
+                        <span>₩263,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/AAPDSW8535XAOIVX-pdp-2.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>Moonface logo overall dress</h3>
+                        <span>₩380,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/AAPDSW8535XXOBLL-pdp-2.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>Moonface logo overall dress</h3>
+                        <span>₩380,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/BBKSHM191301OBKX-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>BAPE BLACK BAPE STA icon</h3>
+                        <span>₩712,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/BBKPTM152315OBKX-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>Paisley Dress Pants</h3>
+                        <span>₩1,186,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/BBKLJM140327OIVX-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>Collarless Ornaments Tweed Coat #3</h3>
+                        <span>₩1,257,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/BBKLJM140315OBWD-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>Washed Leather Harrington Jacket</h3>
+                        <span>₩2,941,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/0ZXSPK004533OBKX-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>Kids Baby Milo Western Shorts</h3>
+                        <span>₩263,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/0ZXSTK001313OBLX-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>Kids Baby Milo Western Shirt</h3>
+                        <span>₩382,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/0ZXTEM004091OGRX-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>Trial Camo General Tee</h3>
+                        <span>₩191,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/AAPPOM1654XXOBKX-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>A patch polo shirt</h3>
+                        <span>₩119,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/AAPSHM6763XXOBGZ-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>Moonface logo slippers</h3>
+                        <span>₩72,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/AAPTEM1672XXOBKX-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>AAPERUNVS patchwork tee</h3>
+                        <span>₩181,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/0ZXLTM002111OBGX-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>Trial Camo One Point Ls Tee</h3>
+                        <span>₩277,000</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/AAPSRM8530XXOBLH-pdp-1.jpg" alt=""></a>
+                    <div class="text">
+                        <h3>Moonface logo printed work shirt</h3>
+                        <span>₩310,000</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+
+    <section class="visual_03">
+        <div class="image">
+            <a href="#"><img
+                    src="img/SS25_Bape_Black_banner_asset_Feb_v3_750x750_a5f92f85-8107-4b26-afb6-3c62b315386b.jpg"
+                    alt=""></a>
+            <p>SHOP NOW</p>
+        </div>
+        <div class="image">
+            <a href="#"><img src="img/2025.02.10_SS25_AD_Lookbook_size_1080x1080_Image_-13.jpg" alt=""></a>
+            <p>SHOP NOW</p>
+        </div>
+    </section><!-- visual_03 end -->
+
+    <section class="visual_04">
+        <div class="image_box">
+            <a href="#">
+                <img src="img/20250220_INT_BAPE.COM___Banner_1667x2500-01.webp" alt="">
+                <div class="image_text">
+                    <p>SHOP</p>
+                    <h3>남자들</h3>
+                </div>
+            </a>
+        </div>
+        <div class="image_box">
+            <a href="#">
+                <img src="img/20250220_INT_BAPE.COM___Banner_1667x2500-02.webp" alt="">
+                <div class="image_text">
+                    <p>SHOP</p>
+                    <h3>여성</h3>
+                </div>
+            </a>
+        </div>
+        <div class="image_box">
+            <a href="#">
+                <img src="img/20250220_INT_BAPE.COM___Banner_1667x2500-03.webp" alt="">
+                <div class="image_text">
+                    <p>SHOP</p>
+                    <h3>어린이</h3>
+                </div>
+            </a>
+        </div>
+    </section><!-- visual_04 end -->
+
+    <section class="visual_05">
+        <section class="title-row-02">
+            <h2>브랜드</h2>
+            <div class="title-row-bar"></div>
+        </section>
+        <div class="item">
+            <div class="item_box">
+                <a href="#"><img src="img/bape_677-200.jpg" alt=""></a>
+            </div>
+            <div class="item_box">
+                <a href="#"><img src="img/03.jpg" alt=""></a>
+            </div>
+            <div class="item_box">
+                <a href="#"><img src="img/02.jpg" alt=""></a>
+            </div>
+            <div class="item_box">
+                <a href="#"><img src="img/AAPE.jpg" alt=""></a>
+            </div>
+            <div class="item_box">
+                <a href="#"><img src="img/04.jpg" alt=""></a>
+            </div>
+            <div class="item_box">
+                <a href="#"><img src="img/05.jpg" alt=""></a>
+            </div>
+        </div>
+    </section><!-- visual_05 end -->
+
+    <footer class="footer">
+        <footer class="footer_top">
+            <div class="footer_span">
+                <h3 class="title">
+                    탐구하다
+                </h3>
+                <ul class="footer_content">
+                    <a href="">
+                        <li>남자들</li>
+                    </a>
+                    <a href="">
+                        <li>여성</li>
+                    </a>
+                    <a href="">
+                        <li>어린이</li>
+                    </a>
+                    <a href="">
+                        <li>라이프스타일</li>
+                    </a>
+                    <a href="">
+                        <li>뉴스</li>
+                    </a>
+                    <a href="">
+                        <li>갱도</li>
+                    </a>
+
+                </ul>
+            </div>
+            <div class="footer_span">
+                <h3 class="title">
+                    고객관리
+                </h3>
+                <ul class="footer_content">
+                    <a href="">
+                        <li>문의하기</li>
+                    </a>
+                    <a href="">
+                        <li>배송</li>
+                    </a>
+                    <a href="">
+                        <li>반품정책</li>
+                    </a>
+                    <a href="">
+                        <li>개인정보 보호정책</li>
+                    </a>
+                    <a href="">
+                        <li>쿠키정책</li>
+                    </a>
+                    <a href="">
+                        <li>이용약관</li>
+                    </a>
+
+                </ul>
+            </div>
+            <div class="footer_span_02">
+                <h3 class="title">
+                    최신 BAPE 컬렉션 소식을 받아보려면 구독하세요.
+                </h3>
+                <div class="footer_signup">
+                    <div class="email_box">
+                        <p>메일링 목록에 가입하세요</p>
+                    </div>
+                    <a href="#">
+                        <div class="footer_subscribe">
+                            <p>가입하다</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </footer><!-- footer_top end -->
+        <footer class="footer_bottom">
+            <div class="footer_left">
+                <ul class="social-icons">
+                    <li><a href="#"><img src="icon/ri--facebook-fill.png" alt=""></a></li>
+                    <li><a href="#"><img src="icon/uil--instagram.png" alt=""></a></li>
+                    <li><a href="#"><img src="icon/fa6-brands--x-twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="icon/ix--youtube-filled.png" alt=""></a></li>
+                </ul>
+
+                <ul class="policies-list">
+                    <li><a href="#">환불 정책</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">배송 정책</a></li>
+                    <li><a href="#">서비스 약관</a></li>
+                    <li><a href="#">연락처 정보</a></li>
+                </ul>
+                <p class="span">
+                    <a href="#">© 2025 INT.BAPE.COM</a>
+                    •
+                    <a href="#">Powered by Shopify</a>
+                </p>
+            </div>
+            <div class="footer_right">
+                <div class="right-item">
+                    <button class="button-6">
+                        <a href="#">한국어 <img src="icon/ic--baseline-keyboard-control-key (1).png" alt=""></a>
+                    </button>
+                    <ul class="depth-04">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">한국어</a></li>
+                        <li><a href="#">繁體中文</a></li>
+                    </ul>
+                </div><!-- right-item -->
+
+                <div class="right-item-02">
+                    <button class="button-7">
+                        <a href="#"><img src="icon/twemoji--flag-south-korea.png" alt="">KRW ₩ <img
+                                src="icon/ic--baseline-keyboard-control-key (1).png" alt="">
+                        </a>
+                    </button>
+                    <ul class="depth-05">
+                        <li><a href="#">남아프리카 (ZAR R)</a></li>
+                        <li><a href="#">노르웨이 (EUR €)</a></li>
+                        <li><a href="#">뉴질랜드 (NZD $)</a></li>
+                        <li><a href="#">대만 (TWD $)</a></li>
+                        <li><a href="#">대한민국 (KRW ₩)</a></li>
+                        <li><a href="#">덴마크 (EUR €)</a></li>
+                        <li><a href="#">라트비아 (EUR €)</a></li>
+                        <li><a href="#">루마니아 (EUR €)</a></li>
+                        <li><a href="#">리투아니아 (EUR €)</a></li>
+                        <li><a href="#">마카오(중국 특별행정구) (MOP P)</a></li>
+                        <li><a href="#">말레이시아 (MYR RM)</a></li>
+                        <li><a href="#">멕시코 (MXN $)</a></li>
+                        <li><a href="#">몰타 (EUR €)</a></li>
+                        <li><a href="#">바레인 (USD $)</a></li>
+                        <li><a href="#">베트남 (USD $)</a></li>
+                        <li><a href="#">불가리아 (EUR €)</a></li>
+                        <li><a href="#">브라질 (USD $)</a></li>
+                        <li><a href="#">사우디아라비아 (SAR ر.س)</a></li>
+                        <li><a href="#">스웨덴 (EUR €)</a></li>
+                        <li><a href="#">스위스 (EUR €)</a></li>
+                        <li><a href="#">슬로베니아 (EUR €)</a></li>
+                        <li><a href="#">싱가포르 (SGD $)</a></li>
+                        <li><a href="#">아랍에미리트 (AED د.إ)</a></li>
+                        <li><a href="#">아르헨티나 (USD $)</a></li>
+                        <li><a href="#">에스토니아 (EUR €)</a></li>
+                        <li><a href="#">오만 (USD $)</a></li>
+                        <li><a href="#">오스트레일리아 (AUD $)</a></li>
+                        <li><a href="#">인도 (USD $)</a></li>
+                        <li><a href="#">인도네시아 (IDR Rp)</a></li>
+                        <li><a href="#">칠레 (USD $)</a></li>
+                        <li><a href="#">카자흐스탄 (USD $)</a></li>
+                        <li><a href="#">카타르 (QAR ر.ق)</a></li>
+                        <li><a href="#">콜롬비아 (USD $)</a></li>
+                        <li><a href="#">쿠웨이트 (USD $)</a></li>
+                        <li><a href="#">키프로스 (EUR €)</a></li>
+                        <li><a href="#">태국 (USD $)</a></li>
+                        <li><a href="#">터키 (EUR €)</a></li>
+                        <li><a href="#">핀란드 (EUR €)</a></li>
+                        <li><a href="#">필리핀 (PHP ₱)</a></li>
+                        <li><a href="#">헝가리 (EUR €)</a></li>
+                        <li><a href="#">홍콩(중국 특별행정구) (HKD $)</a></li>
+                    </ul>
+                </div><!-- right-item-02 end -->
+
+            </div><!-- footer_right -->
+        </footer><!-- footer_bottom -->
+    </footer><!-- footer end -->
+</body>
+
+</html>
